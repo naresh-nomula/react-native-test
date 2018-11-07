@@ -1,21 +1,10 @@
-import React, {Component} from 'react';
-import { Container, Header, Content, Accordion } from "native-base";
+import React from 'react';
+import Navigation from './src/Navigation/index';
 
-const dataArray = [
-    { title: "First Element", content: "Lorem ipsum dolor sit amet" },
-    { title: "Second Element", content: "Lorem ipsum dolor sit amet" },
-    { title: "Third Element", content: "Lorem ipsum dolor sit amet" }
-];
+const App = () => {
+    return (
+            <Navigation />
+    );
+};
 
-export default class App extends Component {
-    render() {
-        return (
-            <Container>
-                <Header />
-                <Content padder>
-                    <Accordion dataArray={dataArray} icon="add" expandedIcon="remove" />
-                </Content>
-            </Container>
-        );
-    }
-}
+export default App;
